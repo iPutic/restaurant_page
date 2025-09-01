@@ -1,6 +1,13 @@
-body {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html {
   background-color: rgb(238, 238, 122);
-  font-family: sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, Georgia, "Times New Roman";
+  padding: 12px;
 }
 
 #logo {
