@@ -2,7 +2,7 @@ import "./style.css";
 
 console.log("Webpack is working!");
 
-function loadHomePage () {
+function loadHomePage() {
     const content = document.getElementById("content");
     content.innerHTML = "";
 
@@ -12,9 +12,10 @@ function loadHomePage () {
 
     const paragraph1 = document.createElement("div");
     let p1 = document.createElement("p");
-    p1.textContent = "A cozy, modern bistro specializing in Mediterranean fusion cuisine." +
-    "Warm lighting, rustic wooden tables, and a friendly staff make it perfect for casual dinners or weekend brunch. " +
-    "Signature dishes combine fresh herbs, local produce, and classic Mediterranean flavors with a modern twist.";
+    p1.textContent =
+        "A cozy, modern bistro specializing in Mediterranean fusion cuisine. " +
+        "Warm lighting, rustic wooden tables, and a friendly staff make it perfect for casual dinners or weekend brunch. " +
+        "Signature dishes combine fresh herbs, local produce, and classic Mediterranean flavors with a modern twist.";
     paragraph1.appendChild(p1);
     content.appendChild(paragraph1);
 
@@ -22,13 +23,21 @@ function loadHomePage () {
     let hfp2 = document.createElement("h3");
     hfp2.textContent = "Working Hours";
     let ul = document.createElement("ul");
-    const days = [ "Sunday: 8am - 8pm","Monday: 6am - 6pm","Tuesday: 6am - 6pm","Wednesday: 6am - 6pm","Thursday: 6am - 10pm",
-    "Friday: 6am - 10pm","Saturday: 8am - 10pm","Sunday : we dont work"];
+    const days = [
+        "Sunday: 8am - 8pm",
+        "Monday: 6am - 6pm",
+        "Tuesday: 6am - 6pm",
+        "Wednesday: 6am - 6pm",
+        "Thursday: 6am - 10pm",
+        "Friday: 6am - 10pm",
+        "Saturday: 8am - 10pm",
+        "Sunday: we don't work"
+    ];
     days.forEach((item) => {
         const li = document.createElement("li");
         li.textContent = item;
         ul.appendChild(li);
-    })
+    });
     paragraph2.appendChild(hfp2);
     paragraph2.appendChild(ul);
     content.appendChild(paragraph2);
@@ -42,6 +51,7 @@ function loadHomePage () {
     paragraph3.appendChild(p3);
     content.appendChild(paragraph3);
 }
+
 
 loadHomePage();
 
