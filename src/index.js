@@ -14,23 +14,31 @@ function loadHomePage () {
     let p1 = document.createElement("p");
     p1.textContent = "A cozy, modern bistro specializing in Mediterranean fusion cuisine." +
     "Warm lighting, rustic wooden tables, and a friendly staff make it perfect for casual dinners or weekend brunch. " +
-    "Signature dishes combine fresh herbs, local produce, and classic Mediterranean flavors with a modern twist." ;
+    "Signature dishes combine fresh herbs, local produce, and classic Mediterranean flavors with a modern twist.";
     paragraph1.appendChild(p1);
     content.appendChild(paragraph1);
 
     const paragraph2 = document.createElement("div");
-    let p2 = document.createElement("p");
-    p2.textContent = "A cozy, modern bistro specializing in Mediterranean fusion cuisine." +
-    "Warm lighting, rustic wooden tables, and a friendly staff make it perfect for casual dinners or weekend brunch. " +
-    "Signature dishes combine fresh herbs, local produce, and classic Mediterranean flavors with a modern twist." ;
-    paragraph2.appendChild(p2);
+    let hfp2 = document.createElement("h3");
+    hfp2.textContent = "Working Hours";
+    let ul = document.createElement("ul");
+    const days = [ "Sunday: 8am - 8pm","Monday: 6am - 6pm","Tuesday: 6am - 6pm","Wednesday: 6am - 6pm","Thursday: 6am - 10pm",
+    "Friday: 6am - 10pm","Saturday: 8am - 10pm","Sunday : we dont work"];
+    days.forEach((item) => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        ul.appendChild(li);
+    })
+    paragraph2.appendChild(hfp2);
+    paragraph2.appendChild(ul);
     content.appendChild(paragraph2);
 
     const paragraph3 = document.createElement("div");
+    let hfp3 = document.createElement("h3");
+    hfp3.textContent = "Location";
+    paragraph3.appendChild(hfp3);
     let p3 = document.createElement("p");
-    p3.textContent = "A cozy, modern bistro specializing in Mediterranean fusion cuisine." +
-    "Warm lighting, rustic wooden tables, and a friendly staff make it perfect for casual dinners or weekend brunch. " +
-    "Signature dishes combine fresh herbs, local produce, and classic Mediterranean flavors with a modern twist." ;
+    p3.textContent = "123 Forest Drive, Forestville, Maine";
     paragraph3.appendChild(p3);
     content.appendChild(paragraph3);
 }
