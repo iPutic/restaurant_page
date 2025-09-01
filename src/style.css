@@ -8,9 +8,18 @@ body, html {
   background-color: rgb(238, 238, 122);
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, Georgia, "Times New Roman";
   padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #logo {
     height: 20px;
+    width: auto;
+}
+
+.placeholder {
+    height: 200px;
     width: auto;
 }
