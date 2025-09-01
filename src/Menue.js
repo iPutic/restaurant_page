@@ -4,7 +4,7 @@ export default function loadMenuePage() {
     const content = document.getElementById("content");
     content.innerHTML = `
         <h1>Our Menue!</h1>
-        <div class="sections">
+        <div class="section">
             <h2>Beverages</h2>
                 <div class ="items">
                     <h3>Sparkling Lemon Basil Soda <strong>Price</strong></h3>
@@ -22,7 +22,7 @@ export default function loadMenuePage() {
                     <img class="placeholder" src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="placeholder img">
                 </div>
         </div>
-        <div class="sections">
+        <div class="section">
             <h2>Appetizers</h2>
                 <div class ="items">
                     <h3>Crispy Zucchini Fritters with Tzatziki <strong>Price</strong></h3>
@@ -40,7 +40,7 @@ export default function loadMenuePage() {
                     <img class="placeholder" src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="placeholder img">
                 </div>
         </div>
-        <div class="sections">
+        <div class="section">
             <h2>Main Courses</h2>
                 <div class ="items">
                     <h3>Herb-Crusted Sea Bass <strong>Price</strong></h3>
@@ -68,7 +68,8 @@ export default function loadMenuePage() {
                     <img class="placeholder" src="https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png" alt="placeholder img">
                 </div>
                 </div>
-                <div class="sections">
+                <div class="section
+    ">
                     <h2>Desserts</h2>
                         <div class ="items">
                             <h3>Baklava Bites <strong>Price</strong></h3>

@@ -55,7 +55,6 @@ function loadHomePage() {
     content.appendChild(paragraph3);
 }
 
-
 loadHomePage();
 
 const headerNav = document.querySelector("nav");
@@ -65,6 +64,8 @@ import contactPage from './contact.js';
 
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
+        buttons.forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
         if (button.textContent === "Home") {
             loadHomePage();
         } else if (button.textContent === "Menue")  {

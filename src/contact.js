@@ -2,7 +2,7 @@ import "./style.css";
 
 function createInfoBlock(title, lines) {
     const block = document.createElement("div");
-    blockclassList.add("section")
+    block.classList.add("section")
 
     const heading = document.createElement("h3");
     heading.textContent = title;
