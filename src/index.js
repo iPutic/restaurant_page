@@ -59,7 +59,7 @@ loadHomePage();
 
 const headerNav = document.querySelector("nav");
 const buttons = headerNav.querySelectorAll("button");
-import menuPage from './menue.js';
+import menuPage from './menu.js';
 import contactPage from './contact.js';
 
 buttons.forEach((button) => {
@@ -68,7 +68,7 @@ buttons.forEach((button) => {
         button.classList.add("active");
         if (button.textContent === "Home") {
             loadHomePage();
-        } else if (button.textContent === "Menue")  {
+        } else if (button.textContent === "Menu")  {
             menuPage();
         } else {
             contactPage();

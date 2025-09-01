@@ -1,9 +1,9 @@
 import "./style.css";
 
-export default function loadMenuePage() {
+export default function loadMenuPage() {
     const content = document.getElementById("content");
     content.innerHTML = `
-        <h1>Our Menue!</h1>
+        <h1>Our Menu!</h1>
         <div class="section">
             <h2>Beverages</h2>
                 <div class ="items">
