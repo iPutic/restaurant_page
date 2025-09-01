@@ -24,7 +24,11 @@ module.exports = {
     }),
   ],
   devServer: {
-    static: "./dist",
+    static: {
+    directory: path.join(__dirname, "dist"),
+    watch: true,
+    },
+    hot: true,
     open: true,
   },
 };

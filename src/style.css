@@ -2,3 +2,8 @@ body {
   background-color: rgb(238, 238, 122);
   font-family: sans-serif;
 }
+
+#logo {
+    height: 20px;
+    width: auto;
+}
