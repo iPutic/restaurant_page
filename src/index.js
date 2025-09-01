@@ -4,6 +4,7 @@ console.log("Webpack is working!");
 
 function loadHomePage () {
     const content = document.getElementById("content");
+    content.innerHTML = "";
 
     const heading = document.createElement("h1");
     heading.textContent = "Welcome to The Basil";
@@ -35,3 +36,20 @@ function loadHomePage () {
 }
 
 loadHomePage();
+
+const headerNav = document.querySelector("nav");
+const buttons = headerNav.querySelectorAll("button");
+import menuPage from './menue.js';
+import contactPage from './contact.js';
+
+buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+        if (button.textContent === "Home") {
+            loadHomePage();
+        } else if (button.textContent === "Menue")  {
+            menuPage();
+        } else {
+            contactPage();
+        }
+    })
+})

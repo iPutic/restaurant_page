@@ -18,17 +18,17 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: "./src/index.html",
-      filename: "index.html",
-    }),
-  ],
-  devServer: {
-    static: {
+  new HtmlWebpackPlugin({
+    template: "./src/index.html",
+    filename: "index.html",
+  }),
+],
+devServer: {
+  static: {
     directory: path.join(__dirname, "dist"),
     watch: true,
-    },
-    hot: true,
-    open: true,
   },
+  hot: true,
+  open: true,
+}
 };
